@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: calc(100vh - 90px);
+  background-color: black;
+  /* background: linear-gradient(180deg, grey 10%, white 30%, black 100%); */
+
+  text-align: center;
+  font-family: 'DM Sans';
+  color: white;
+}
+
+/*----------- BOX 1 -----------*/
+
+main {
+  width: 80%;
+  max-width: 400px;
+
+  margin-top: 90px;
+  margin-inline: auto;
+  padding: 30px 0 50px;
+
+  background-color: #272727;
+  border-radius: 80px;
+
+  translate: opacity;
+}
+
+main #img2,
+p#rolling-text,
+.face,
+h2,
+#rollDiceAgainButton,
+#backToStartButton {
+  display: none;
+}
+
+main #img1 {
+  width: 250px;
+  height: 200px;
+
+  filter: brightness(1.2);
+}
+/*pq a imagem ficou esticada de início?*/
+
+main h1 {
+  font-size: 40px;
+
+  margin-top: -20px;
+}
+
+main p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+main p span {
+  font-weight: bold;
+}
+
+button {
+  width: 60%;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 20px;
+
+  text-transform: uppercase;
+  color: white;
+  font-family: 'DM Sans';
+  font-weight: bold;
+  font-size: 20px;
+
+  background-color: red;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+button#rollDiceButton {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*----------- BOX 2 -----------*/
+
+main.rolling-dice #img1,
+main.rolling-dice .face,
+main.rolling-dice h1,
+main.rolling-dice p,
+main.rolling-dice button,
+main.rolling-dice h2 {
+  display: none;
+}
+
+main.rolling-dice {
+  background-color: red;
+}
+
+main.rolling-dice #boxImg2 {
+  background-color: white;
+  animation: main 4s infinite;
+
+  border: none;
+  border-radius: 200px;
+
+  width: 55%;
+  height: 60%;
+
+  margin-inline: auto;
+  margin-bottom: 25px;
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes main {
+  50% {
+    top: 0px;
+    left: 0px;
+    background: #272727;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    background: grey;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    background: #006600;
+  }
+}
+
+main.rolling-dice #img2 {
+  display: initial;
+
+  width: 150px;
+  height: 150px;
+
+  filter: brightness(1.2);
+}
+
+main.rolling-dice p#rolling-text {
+  display: initial;
+
+  /* margin-top: 25px; */
+  /*pq qnd eu coloquei aqui n funcionou? tive que colocar no boxImg2*/
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*----------- BOX 3 -----------*/
+
+main.dice-result img#img1,
+main.dice-result #boxImg2,
+main.dice-result h1,
+main.dice-result p,
+main.dice-result #rollDiceButton {
+  display: none;
+}
+
+main.dice-result {
+  background-color: white;
+}
+
+main.dice-result .face {
+  display: initial;
+}
+/*tentar a entrada da face de cima pra baixo dps*/
+
+main.dice-result .face {
+  filter: brightness(1.2);
+
+  width: 130px;
+  height: 130px;
+
+  margin-top: 20px;
+
+  display: none;
+}
+
+main.dice-result .face.show {
+  display: initial;
+}
+
+main.dice-result .buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+main.dice-result #rollDiceAgainButton,
+main.dice-result #backToStartButton {
+  display: initial;
+  width: 30%;
+  padding: 10px;
+  font-size: 12px;
+}
+
+main.dice-result h2 {
+  display: initial;
+
+  color: black;
+  font-size: 50px;
+}
+
+main.dice-result h2 div {
+  font-size: 20px;
+}

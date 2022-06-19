@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="main.js" defer></script>
+
+    <title>Girar Dado</title>
+  </head>
+  <body>
+    <main class="" id="main">
+      <!--class="rolling-dice" quando clica-->
+      <!--class="dice-result" de resultado-->
+      <img
+        id="img1"
+        src="assets/dados.png"
+        alt="Imagem de dois dados vermelhos."
+      />
+      <div id="boxImg2">
+        <img
+          id="img2"
+          src="assets/dado1.png"
+          alt="Imagem de um dado vermelho só."
+        />
+      </div>
+
+      <img
+        class="face"
+        id="face1"
+        src="assets/faces/1.png"
+        alt="Face correspondente ao número 1 de um dado vermelho."
+      />
+      <img
+        class="face"
+        id="face2"
+        src="assets/faces/2.png"
+        alt="Face correspondente ao número 2 de um dado vermelho."
+      />
+      <img
+        class="face"
+        id="face3"
+        src="assets/faces/3.png"
+        alt="Face correspondente ao número 3 de um dado vermelho."
+      />
+      <img
+        class="face"
+        id="face4"
+        src="assets/faces/4.png"
+        alt="Face correspondente ao número 4 de um dado vermelho."
+      />
+      <img
+        class="face"
+        id="face5"
+        src="assets/faces/5.png"
+        alt="Face correspondente ao número 5 de um dado vermelho."
+      />
+      <img
+        class="face"
+        id="face6"
+        src="assets/faces/6.png"
+        alt="Face correspondente ao número 6 de um dado vermelho."
+      />
+
+      <h1>Teste sua sorte!</h1>
+      <p>Clique no botão para <span>rolar o dado</span>!</p>
+
+      <p id="rolling-text">Rolando o dado...</p>
+
+      <h2 id="result"></h2>
+
+      <button id="rollDiceButton" onclick="rollDice()">Rolar Dado</button>
+
+      <div class="buttons">
+        <button id="rollDiceAgainButton" onclick="rollDiceAgain()">
+          Rolar de novo
+        </button>
+        <button id="backToStartButton" onclick="backToStart()">Voltar</button>
+      </div>
+    </main>
+  </body>
+</html>
