@@ -51,6 +51,7 @@ main h1 {
   max-width: 80%;
 
   font-size: 40px;
+  font-weight: bold;
 
   margin-top: -20px;
 }
