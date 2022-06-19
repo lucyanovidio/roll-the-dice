@@ -51,15 +51,15 @@ main h1 {
   max-width: 80%;
 
   font-size: 40px;
-  font-weight: bold;
+  line-height: 40px;
 
-  margin-top: -20px;
+  margin-top: -5px;
 }
 
 main p {
   max-width: 80%;
 
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 
