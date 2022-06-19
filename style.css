@@ -6,7 +6,6 @@
 body {
   height: calc(100vh - 90px);
   background-color: black;
-  /* background: linear-gradient(180deg, grey 10%, white 30%, black 100%); */
 
   text-align: center;
   font-family: 'DM Sans';
@@ -26,7 +25,10 @@ main {
   background-color: #272727;
   border-radius: 80px;
 
-  translate: opacity;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 main #img2,
@@ -44,15 +46,18 @@ main #img1 {
 
   filter: brightness(1.2);
 }
-/*pq a imagem ficou esticada de início?*/
 
 main h1 {
+  max-width: 80%;
+
   font-size: 40px;
 
   margin-top: -20px;
 }
 
 main p {
+  max-width: 80%;
+
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -152,9 +157,6 @@ main.rolling-dice #img2 {
 main.rolling-dice p#rolling-text {
   display: initial;
 
-  /* margin-top: 25px; */
-  /*pq qnd eu coloquei aqui n funcionou? tive que colocar no boxImg2*/
-
   font-size: 25px;
   font-weight: bold;
 }
@@ -174,17 +176,12 @@ main.dice-result {
 }
 
 main.dice-result .face {
-  display: initial;
-}
-/*tentar a entrada da face de cima pra baixo dps*/
-
-main.dice-result .face {
   filter: brightness(1.2);
 
   width: 130px;
   height: 130px;
 
-  margin-top: 20px;
+  margin-block: 20px;
 
   display: none;
 }
@@ -194,6 +191,8 @@ main.dice-result .face.show {
 }
 
 main.dice-result .buttons {
+  width: 100%;
+
   display: flex;
   gap: 5px;
   justify-content: center;
