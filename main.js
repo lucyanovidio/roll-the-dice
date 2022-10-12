@@ -1,11 +1,7 @@
-// Qual a entrada e a saída?
-// Quais as variáveis?
-
 const main = document.querySelector('#main')
 const result = document.querySelector('#result')
 const diceFaces = ['1', '2', '3', '4', '5', '6']
 
-// antes isso aqui não tava dando certo pq eu tava tentando pegar as imgs de dentro de uma div. Eu n sei como referenciar, tlgd, sem ser um id fora, pelado igual tá aqui.
 const diceFace1 = document.querySelector('#face1')
 const diceFace2 = document.querySelector('#face2')
 const diceFace3 = document.querySelector('#face3')
@@ -25,7 +21,6 @@ function rollDice() {
 
   // FAZENDO ELE MOSTRAR A IMAGEM DA FACE CORRESPONDENTE AO NÚMERO
 
-  // primeiro digo pra remover pra quando chamar a função dnv girando o dado dnv, se n a imagem fica no show para sempre
   diceFace1.classList.remove('show')
   diceFace2.classList.remove('show')
   diceFace3.classList.remove('show')
