@@ -1,7 +1,7 @@
 # Roll the dice 🎲
 
 ![Imagem do projeto](./assets/resultado.png)
-> <a href="https:/lucyanovidio.github.io/roll-the-dice">Acesse aqui</a>
+> <a href="https://lucyanovidio.github.io/roll-the-dice">Acesse aqui</a>
 
 ## 💻 Sobre
 
@@ -18,7 +18,7 @@ No pequeno programa Roll the dice, ao clicar em "rolar dado", ele te retorna um 
 Ao fim, o usuário pode voltar ao início ou rolar o dado novamente.
 <br><br>
 
-> <a href="https:/lucyanovidio.github.io/roll-the-dice">Teste sua sorte 🍀</a>
+> <a href="https://lucyanovidio.github.io/roll-the-dice">Teste sua sorte 🍀</a>
 
 ## 🧠 Tecnologias
 
