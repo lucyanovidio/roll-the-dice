@@ -11,7 +11,7 @@ onde, entre outras coisas, vimos:
 + DOM;
 + Geração de número aleatório para resultado final.
 
-*<a href="https://github.com/lucyanovidio/maratonas-explorer-rocketseat/maratona-explorer-1">Acessar repositório da Maratona Explorer 1</a>*
+*<a href="https://github.com/lucyanovidio/maratonas-explorer-rocketseat/tree/main/maratona-explorer-1">Acessar repositório da Maratona Explorer 1</a>*
 
 <br>
 No pequeno programa Roll the dice, ao clicar em "rolar dado", ele te retorna um número aleatório de 0 a 6, números existentes em um dado, com uma imagem da respectiva face do mesmo.
